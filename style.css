@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #333;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: gainsboro;
+
+}
+#btn{
+position: relative;
+bottom: 20px;
+right: 100px;
+}
+
+nav i {
+    float: right;
+    margin-top: 3%;
+}
+
+.logo img {
+    background: none;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.dark {
+    background-color: black;
+    color: aliceblue;
+}
+
+.light {
+    background-color: aliceblue;
+    color: black;
+}
+
+nav i {
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+nav ul {
+    float: right;
+    text-align: center;
+    margin-top: -2%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-align: center;
+    font-size: 1.50rem;
+    cursor: pointer;
+
+}
+
+
+.btn .btns:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+#check {
+    opacity: 0;
+}
+
+label {
+    text-align: center;
+}
+
+label i {
+    float: right;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2%;
+    padding: 6px;
+    transition: .5s;
+    opacity: 0;
+}
+
+@media (max-width:952px) {
+
+    .checked {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        font-size: large;
+        color: aliceblue;
+        font-size: large;
+    }
+
+    ul li a {
+        color: white;
+    }
+
+    #check {
+        opacity: 1;
+        display: none;
+    }
+
+    nav i {
+        opacity: 0;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        left: -100%;
+        top: 8%;
+        background-color: black;
+        color: white;
+        font-size: 1.50rem;
+        padding: 10px;
+        transition: all 0.5s;
+    }
+
+    label i {
+        opacity: 1;
+        transition: all 0.5s;
+        position: relative;
+        bottom: 30px;
+        font-size: 2rem;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        text-align: center;
+    }
+
+     
+
+    .left p {
+        min-width: 500px;
+        text-align: start;
+    }
+    .left h1 {
+        position: relative;
+        right: 50px;
+        font-size: 2rem;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .right img {
+        width: 100%;
+        min-width: 400px;
+        flex-direction: column;
+        max-width: 400px;
+        display: block;
+    }
+
+    .right img {
+        width: 100%;
+
+
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .music {
+        flex: 1 1 100%;
+        padding: 10px;
+        max-width: 400px;
+        position: relative;
+        right: 20%;
+    }
+
+    .music iframe {
+        height: 200px;
+        min-width: 130%;
+    }
+
+    #photo {
+        position: relative;
+        top: 260%;
+    }
+
+
+
+    .blog h1 {
+        font-size: 2rem;
+    }
+
+    .photos img {
+        min-width: 450px;
+        height: 200px;
+        margin-top: 15%;
+
+    }
+
+    #contact {
+        position: relative;
+        top: 400%;
+        width: 100%;
+        height: 80vh;
+        margin-top: 20%;
+    }
+
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact label {
+        font-size: large;
+        position: relative;
+        right: 19px;
+        font-weight: bold;
+    }
+
+    .contact input,
+    .contact textarea {
+        min-width: 400px;
+        min-height: 50px;
+        border: 1px solid gray;
+    }
+
+    .btn button {
+        font-size: 2rem;
+        font-weight: bold;
+        min-width: 400px;
+        min-height: 70px;
+
+        margin-left: 1%;
+        margin-top: 5%;
+
+
+    }
+
+
+
+
+
+
+    .contact label,
+    .contact input,
+    .contact textarea {
+        width: 90%;
+        max-width: 100%;
+        font-size: large;
+    }
+
+    footer {
+        position: relative;
+        top: 400%;
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        text-align: center;
+    }
+
+    footer p {
+        position: relative;
+        top: 10px;
+        left: 15px;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    footer a i {
+        position: relative;
+        top: 10px;
+        left: 90px;
+        display: flex;
+        color: wheat;
+        font-size: large;
+    }
+
+
+
+
+
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    margin-top: 3%;
+
+}
+
+section .container {
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.left {
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.left h1 {
+    font-size: 2.50rem;
+    padding: 10px;
+
+}
+
+.left p {
+    padding: 10px;
+    font-size: 1.40rem;
+
+}
+
+.right img {
+    width: 30%;
+    float: right;
+    margin-top: -12%;
+
+
+}
+
+.btn {
+    margin-left: 5%;
+    padding-left: 10px;
+    padding-top: 15px;
+
+}
+
+.btn button {
+    padding: 8px 10px;
+    font-size: 20px;
+}
+
+.btn1 {
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+#playlist {
+    width: 50%;
+    max-height: 300px;
+
+}
+
+#playlist {
+    width: 90%;
+    margin-left: 10%;
+    display: inline-block;
+
+
+
+}
+
+.music {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 3rem;
+
+
+}
+
+.music iframe {
+    margin-top: 2%;
+    padding: 0 20px;
+    border: none;
+}
+
+#photo {
+    width: 100%;
+    height: 100vh;
+    margin-top: 20%;
+    margin-left: 7%;
+
+}
+
+.blog h1 {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.photos img {
+    padding: 0 10px;
+    margin-top: 2%;
+
+}
+
+#contact {
+    width: 100%;
+    height: 80vh;
+
+
+}
+
+.form {
+    text-align: center;
+
+}
+
+#contact h1 {
+    font-size: 3rem;
+}
+
+
+
+form {
+    display: block;
+
+}
+
+.contact label {
+    display: block;
+    margin-left: -25%;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.contact input {
+    margin-top: 1%;
+    width: 30%;
+    padding: 7px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    display: inline-block;
+    gap: 10px;
+
+
+}
+
+.contact textarea {
+    width: 30%;
+}
+
+
+.btn {
+    margin-right: 20%;
+
+}
+ footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+
+}
+
+
+footer p {
+    padding: 10px;
+    font-size: 12px;
+}
+footer a{
+    float: right;
+    display: flex;
+    float: right;
+}
+
+footer i {
+    position: relative; 
+    left: 100px;
+    padding-left: 20%;
+    display: flex;
+    padding: 10px 10px;
+    font-size: 1.50rem;
+}
